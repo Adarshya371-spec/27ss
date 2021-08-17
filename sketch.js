@@ -7,7 +7,7 @@ var engine, world;
 var box1, pig1;
 var backgroundImg,platform;
 var bird, slingShot;
-
+var chain;
 function preload() {
     backgroundImg = loadImage("sprites/bg.png");
 }
@@ -38,7 +38,7 @@ function setup(){
 
     bird = new Bird(100,100);
 
-    log6 = new Log(230,180,80, PI/2);
+    log6 = new Log(330,180,80, PI/2);
     chain = new Chain(bird.body,log6.body);
 }
 
